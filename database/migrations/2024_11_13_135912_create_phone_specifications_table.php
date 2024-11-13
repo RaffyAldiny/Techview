@@ -31,7 +31,7 @@ return new class extends Migration
             $table->string('storage', 200)->nullable();
             $table->boolean('expandable_storage')->default(false);
             $table->string('os', 200)->nullable();
-            $table->foreignId('mobilesoc_id')->constrained('mobile_socs');
+            $table->foreignId('mobilesoc_id');
             $table->string('gpu', 200)->nullable();
             $table->string('network_technology', 200)->nullable();
             $table->string('sim_type', 200)->nullable();
@@ -39,7 +39,7 @@ return new class extends Migration
             $table->boolean('bluetooth')->default(false);
             $table->boolean('gps')->default(false);
             $table->boolean('nfc')->default(false);
-            $table->boolean('usb')->default(false);
+            $table->string('usb', 200)->nullable();
             $table->string('fingerprint_sensor', 200)->nullable();
             $table->boolean('face_recognition')->default(false);
             $table->boolean('water_resistance')->default(false);

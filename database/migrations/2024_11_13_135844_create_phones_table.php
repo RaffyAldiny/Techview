@@ -13,15 +13,16 @@ return new class extends Migration
     {
         Schema::create('phones', function (Blueprint $table) {
             $table->id('phone_id');
-            $table->string('name');
-            $table->string('brand', 255);
-            $table->date('release_date');
-            $table->foreignId('phonespecification_id')->constrained('phone_specifications');
-            $table->text('description')->nullable();
-            $table->boolean('is_featured')->default(false);
-            $table->string('image_path')->nullable();
-            $table->timestamps();
+            $table->string('name');  // Phone name
+            $table->string('brand', 255);  // Brand name, up to 255 chars
+            $table->date('release_date')->nullable();  // Release date
+            $table->foreignId('phonespecification_id');
+            $table->text('description')->nullable();  // Detailed description
+            $table->boolean('is_featured')->default(false);  // Featured flag
+            $table->string('image_path')->nullable();  // Image path for the phone
+            $table->timestamps();  // created_at and updated_at
         });
+        
         
     }
 
