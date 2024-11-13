@@ -12,14 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('reviews_resources', function (Blueprint $table) {
-            $table->id('section_id');
-            $table->foreignId('review_id')->constrained('reviews');  // Reference to Review
-            $table->string('section_title');  // Title of the section within the review
-            $table->text('section_content');  // Content for the section
-            $table->integer('section_order')->nullable();  // Order of the section
+            $table->id();
+            $table->foreignId('review_id')->constrained('reviews');
+            $table->string('section_title');
+            $table->text('section_content');
+            $table->integer('section_order')->nullable();
             $table->timestamps();
-        });
-        
+        });  
     }
 
     /**

@@ -11,16 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('mobile_comparisons', function (Blueprint $table) {
+        Schema::create('mobile_socs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('phone_id_1')->constrained('phones');
-            $table->foreignId('phone_id_2')->constrained('phones');
-            $table->text('comparison_details')->nullable();
+            $table->string('name', 255);
+            $table->text('description')->nullable();
+            $table->integer('performance_score')->nullable();
+            $table->integer('antutu_score')->nullable();
+            $table->integer('geekbench_score')->nullable();
             $table->string('image_path')->default('images/default.png')->nullable();
             $table->string('slug', 255)->unique();
             $table->boolean('is_featured')->default(false);
             $table->timestamps();
-        });        
+        });
+        
     }
 
     /**
@@ -28,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('mobile_comparisons');
+        Schema::dropIfExists('mobile_socs');
     }
 };

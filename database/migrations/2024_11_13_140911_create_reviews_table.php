@@ -12,18 +12,17 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('reviews', function (Blueprint $table) {
-            $table->id('review_id');
-            $table->string('title', 150);  // Review title
-            $table->text('content');  // Main review content
-            $table->foreignId('user_id')->constrained('users');  // Reference to User
-            $table->string('image_path')->nullable();  // Image for the review
-            $table->string('item_type',255);  // Type of item being reviewed
-            $table->string('slug', 100)->unique();  // Unique slug for URLs
-            $table->boolean('is_featured')->default(false);  // Featured flag
+            $table->id();
+            $table->string('title', 150);
+            $table->text('content');
+            $table->foreignId('user_id')->constrained('users');
+            $table->string('image_path')->default('images/default.png')->nullable();
+            $table->enum('item_type', ['phone', 'soc', 'laptop', 'other']);
+            $table->string('slug', 100)->unique();
+            $table->boolean('is_featured')->default(false);
             $table->timestamps();
         });
-        
-        
+ 
     }
 
     /**

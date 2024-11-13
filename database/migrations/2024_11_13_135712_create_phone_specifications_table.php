@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('phone_specifications', function (Blueprint $table) {
-            $table->id('phonespecification_id');
+            $table->id();
             $table->string('display_size', 200)->nullable();
             $table->string('display_resolution', 200)->nullable();
             $table->string('display_technology', 200)->nullable();
@@ -49,6 +49,7 @@ return new class extends Migration
             $table->text('spec_description')->nullable();
             $table->timestamps();
         });
+        
         
     }
 
