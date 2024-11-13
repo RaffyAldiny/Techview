@@ -22,6 +22,6 @@ class MobileSoc extends Model
 
     public function phoneSpecifications()
     {
-        return $this->hasMany(PhoneSpecification::class);
+        return $this->hasMany(Phone::class);
     }
 }
