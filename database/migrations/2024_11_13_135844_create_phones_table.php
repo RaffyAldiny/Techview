@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');  // Phone name
             $table->string('brand', 255);  // Brand name, up to 255 chars
             $table->date('release_date')->nullable();  // Release date
-            $table->foreignId('phonespecification_id');
+            $table->foreignId('phonespecification_id')->constrained('phone_specifications');  // Reference to PhoneSpecification
             $table->text('description')->nullable();  // Detailed description
             $table->boolean('is_featured')->default(false);  // Featured flag
             $table->string('image_path')->nullable();  // Image path for the phone

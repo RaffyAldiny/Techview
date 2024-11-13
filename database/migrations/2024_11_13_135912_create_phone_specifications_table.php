@@ -31,7 +31,7 @@ return new class extends Migration
             $table->string('storage', 200)->nullable();
             $table->boolean('expandable_storage')->default(false);
             $table->string('os', 200)->nullable();
-            $table->foreignId('mobilesoc_id');
+            $table->foreignId('mobilesoc_id')->constrained('mobile_socs');
             $table->string('gpu', 200)->nullable();
             $table->string('network_technology', 200)->nullable();
             $table->string('sim_type', 200)->nullable();
