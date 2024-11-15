@@ -50,7 +50,7 @@ class Review extends Model
         static::deleted(function ($review) {
             RecentContent::where('content_type', 'review')
                 ->where('review_id', $review->id)
-                ->delete();
+                ->delete(); s
         });
     }
 
