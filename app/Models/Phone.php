@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\RecentContent;
 
 class Phone extends Model
 {
@@ -51,7 +52,43 @@ class Phone extends Model
         'audio_jack',
         'other_features',
         'spec_description',
+        'title',
+        'slug',
     ];
+
+    protected static function booted()
+    {
+        static::created(function ($phone) {
+            RecentContent::create([
+                'content_type' => 'phone',
+                'title' => $phone->name,
+                'description' => $phone->description,
+                'image_path' => $phone->image_path,
+                'created_at' => $phone->created_at ?? now(),
+                'updated_at' => $phone->updated_at ?? now(),
+                'phone_id' => $phone->id,
+            ]);
+        });
+
+        static::updated(function ($phone) {
+            RecentContent::updateOrCreate(
+                ['content_type' => 'phone', 'phone_id' => $phone->id],
+                [
+                    'title' => $phone->name,
+                    'description' => $phone->description ,
+                    'image_path' => $phone->image_path ?? 'images/default.png',
+                    'created_at' => $phone->created_at ?? now(),
+                    'updated_at' => $phone->updated_at ?? now(),
+                ]
+            );
+        });
+
+        static::deleted(function ($phone) {
+            RecentContent::where('content_type', 'phone')
+                ->where('phone_id', $phone->id)
+                ->delete();
+        });
+    }
 
     // Relationship to the MobileSoC model
     public function mobileSoc()

@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('phones', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('brand', 255);
+            $table->string('name')->nullable();
+            $table->string('brand', 255)->nullable();
             $table->date('release_date')->nullable();
             $table->text('description')->nullable();
-            $table->boolean('is_featured')->default(false);
-            $table->string('image_path')->default('images/default.png')->nullable();
+            $table->boolean('is_featured')->default(false)->nullable();
+            $table->string('image_path', 255)->default('images/default.png')->nullable();
 
             // Phone Specifications fields
             $table->string('display_size', 200)->nullable();
@@ -34,29 +34,36 @@ return new class extends Migration
             $table->string('battery_capacity', 200)->nullable();
             $table->string('battery_type', 200)->nullable();
             $table->string('charging_speed', 200)->nullable();
-            $table->boolean('wireless_charging')->default(false);
+            $table->boolean('wireless_charging')->default(false)->nullable();
             $table->string('ram', 200)->nullable();
             $table->string('storage', 200)->nullable();
-            $table->boolean('expandable_storage')->default(false);
+            $table->boolean('expandable_storage')->default(false)->nullable();
             $table->string('os', 200)->nullable();
-            $table->foreignId('mobilesoc_id')->constrained('mobile_socs');
+            $table->foreignId('mobilesoc_id')->nullable()->constrained('mobile_socs');
             $table->string('gpu', 200)->nullable();
             $table->string('network_technology', 200)->nullable();
             $table->string('sim_type', 200)->nullable();
-            $table->boolean('wifi')->default(false);
-            $table->boolean('bluetooth')->default(false);
-            $table->boolean('gps')->default(false);
-            $table->boolean('nfc')->default(false);
+            $table->boolean('wifi')->default(false)->nullable();
+            $table->boolean('bluetooth')->default(false)->nullable();
+            $table->boolean('gps')->default(false)->nullable();
+            $table->boolean('nfc')->default(false)->nullable();
             $table->string('usb', 200)->nullable();
             $table->string('fingerprint_sensor', 200)->nullable();
-            $table->boolean('face_recognition')->default(false);
-            $table->boolean('water_resistance')->default(false);
+            $table->boolean('face_recognition')->default(false)->nullable();
+            $table->boolean('water_resistance')->default(false)->nullable();
             $table->string('speaker', 200)->nullable();
             $table->string('audio_jack', 200)->nullable();
             $table->text('other_features')->nullable();
             $table->text('spec_description')->nullable();
+            $table->text('title')->nullable();
+            $table->text('year')->nullable();
+            $table->string('slug', 255)->unique()->nullable();
 
             $table->timestamps();
+
+            $table->index('created_at');
+            $table->index(['is_featured', 'created_at']); 
+            $table->index('brand');
         });
     }
 
