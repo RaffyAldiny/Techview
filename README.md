@@ -1,4 +1,6 @@
+![Uploading techview (1) 2.png…]()
 # <h1 align="center">🌐 TechView</h1>
+
 
 <p align="center">
 <strong>Your trusted platform for in-depth tech insights, device comparisons, and honest reviews.</strong><br>
