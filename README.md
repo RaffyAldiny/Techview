@@ -1,4 +1,5 @@
-![Uploading techview (1) 2.png…]()
+![techview (1) 2 (1)](https://github.com/user-attachments/assets/d40a1fe0-5273-4a87-bbd1-92d2f21f239b)
+
 # <h1 align="center">🌐 TechView</h1>
 
 
