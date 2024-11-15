@@ -1,43 +1,56 @@
-TechView
-TechView is a powerful web platform built to empower users with in-depth insights and reliable information about the latest in technology. Our mission is to make complex tech choices simple, spotlighting trends, comparisons, and honest reviews that guide users in making informed decisions about gadgets, devices, and tech advancements.
+# <p align="center">TechView</p>
 
-Features
-Home Page
+<p align="center">
+TechView is a web platform that empowers users to make informed tech choices. Our mission is to provide clear insights, simplify complex tech comparisons, and deliver honest reviews on the latest gadgets and trends.
+</p>
 
-Showcases the latest tech insights and popular mobile comparisons, helping users stay updated on what's trending.
-Strategic ad placements designed to enhance the user experience without interruption.
-Detailed Device Comparisons
+---
 
-Our comparison tool allows users to explore the features of different mobile devices side-by-side. Whether it's performance, camera specs, or battery life, TechView’s comparison feature provides all the essential details in an easy-to-understand format.
-SEO-friendly comparison URLs (e.g., iPhone 15 Pro vs Samsung S24 Ultra) ensure users can easily find relevant comparisons in search engines.
-SoC (System on Chip) Rankings
+## <p align="center">Features</p>
 
-Dive into the performance metrics of various SoCs with a specialized ranking page. This feature is perfect for users interested in understanding the power and efficiency behind the latest processors.
-In-Depth Tech Reviews
+### <p align="center">Home Page</p>
+<p align="center">Discover the latest tech insights and popular mobile comparisons, along with strategic ad placements for a seamless experience.</p>
 
-Stay informed with unbiased, comprehensive reviews that break down the pros, cons, and key specs of each device. TechView reviews aim to be concise yet thorough, highlighting everything users need to know before making a purchase.
-About Us
+### <p align="center">Detailed Device Comparisons</p>
+<p align="center">Our comparison tool allows users to explore the specs of different mobile devices side-by-side. Each comparison has an SEO-friendly URL (e.g., `iPhone 15 Pro vs Samsung S24 Ultra`) for easy searchability and sharing.</p>
 
-Discover our mission and values. At TechView, we believe in simplicity in complexity, relentless discovery, truth above trends, and knowledge as power. We aim to bridge the gap between innovation and everyday tech use, helping users make smart choices effortlessly.
-Why Choose TechView?
-Reliable Information
+### <p align="center">SoC Rankings</p>
+<p align="center">Explore the performance of various SoCs (System on Chips) with our ranking page, perfect for users who want to understand the power behind their devices.</p>
 
-TechView is dedicated to providing accurate and insightful information that users can trust, ensuring that they make well-informed decisions.
-User-Centric Design
+### <p align="center">In-Depth Tech Reviews</p>
+<p align="center">Stay informed with thorough reviews that highlight the pros, cons, and key features of each device, guiding users in making smart purchasing decisions.</p>
 
-From the navigation to content structure, TechView is designed with the user experience in mind, making it easy to find and compare information quickly.
-Up-to-Date Insights
+### <p align="center">About Us</p>
+<p align="center">Our mission is to bridge the gap between innovation and everyday use. With values rooted in simplicity, truth, and the power of knowledge, TechView is here to make technology accessible and understandable for everyone.</p>
 
-Our team constantly updates content to reflect the latest trends and device releases, ensuring that TechView remains a relevant resource for all things tech.
-Getting Started
-Explore Device Comparisons
+---
 
-Visit the Comparison page to select and compare your favorite devices side-by-side. With an SEO-friendly URL structure, you’ll find it easy to bookmark and share specific comparisons.
-Read Latest Reviews
+## <p align="center">Why Choose TechView?</p>
 
-Check out our review section for the latest insights and device evaluations. Whether you’re looking for a new smartphone or curious about the latest wearable tech, we’ve got you covered.
-Check SoC Rankings
+- **Reliable Information**  
+  <p align="center">We provide trustworthy and up-to-date insights to help users make well-informed decisions.</p>
 
-Visit the SoC Ranking page to see the latest performance scores and chip details, helping you understand the processing power of your chosen devices.
-Connect with Us
-Stay connected with TechView for in-depth reviews, breaking tech news, and expert insights. From smartphone comparisons to the latest gadgets, we’ve got you covered.
+- **User-Centric Design**  
+  <p align="center">TechView is crafted with a seamless user experience in mind, ensuring ease of navigation and quick access to information.</p>
+
+- **Latest Trends and Updates**  
+  <p align="center">Stay on top of tech trends with content that reflects the latest device releases and advancements in technology.</p>
+
+---
+
+## <p align="center">Getting Started</p>
+
+1. **Explore Device Comparisons**  
+   <p align="center">Visit the Comparison page to select and compare devices side-by-side, using SEO-friendly URLs for easy bookmarking and sharing.</p>
+
+2. **Read the Latest Reviews**  
+   <p align="center">Check out our review section for insightful evaluations of the latest gadgets, from smartphones to wearables.</p>
+
+3. **Check SoC Rankings**  
+   <p align="center">Visit the SoC Ranking page to see performance scores and details on various chips, helping you understand your device's power.</p>
+
+---
+
+<p align="center">
+Stay connected with TechView for in-depth reviews, breaking tech news, and expert insights. From smartphone comparisons to the latest gadgets, TechView has you covered.
+</p>
