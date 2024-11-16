@@ -2,6 +2,8 @@
   <img src="https://github.com/user-attachments/assets/d40a1fe0-5273-4a87-bbd1-92d2f21f239b" alt="techview" />
 </p>
 
+<h1 align="center">Techview</h1>
+
 <p align="center">
 <strong>Your trusted platform for in-depth tech insights, device comparisons, and honest reviews.</strong><br>
 TechView helps you stay informed, make smarter choices, and explore the latest gadgets and trends with confidence.
